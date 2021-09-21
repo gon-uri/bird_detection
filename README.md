@@ -2,7 +2,7 @@
 Machine learning algorithm to identify the presence and location of birds.
 
 <img src="https://github.com/gon-uri/bird_detection/blob/main/img/LogoLSD.png" align="right"
-     alt="Size Limit logo by Anton Lovchikov" width="250" height="150">
+     alt="Size Limit logo by Anton Lovchikov" width="350" height="150">
 
 
 
