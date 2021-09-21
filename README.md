@@ -1,8 +1,7 @@
-# Bird Detection Algorithm
-
 <img src="https://github.com/gon-uri/bird_detection/blob/main/img/LogoLSD.png" align="right"
      alt="LSD logo" width="450" height="150">
-
+     
+# Bird Detection Algorithm
 
 Machine learning algorithm to identify the presence and location of birds. 
 Created by Gonzalo Uribarri at [Dynamcial Systems Lab](http://www.lsd.df.uba.ar/research/)
