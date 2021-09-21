@@ -7,50 +7,31 @@ Machine learning algorithm to identify the presence and location of birds.
 
 Created by Gonzalo Uribarri at [Dynamcial Systems Lab](http://www.lsd.df.uba.ar/research/)
 
-* **ES modules** and **tree-shaking** support.
-* Add Size Limit to **Travis CI**, **Circle CI**, **GitHub Actions**
-  or another CI system to know if a pull request adds a massive dependency.
-* **Modular** to fit different use cases: big JS applications
-  that use their own bundler or small npm libraries with many files.
-* Can calculate **the time** it would take a browser
-  to download and **execute** your JS. Time is a much more accurate
-  and understandable metric compared to the size in bytes.
-* Calculations include **all dependencies and polyfills**
-  used in your JS.
-
-<p align="center">
-  <img src="./img/example.png" alt="Size Limit CLI" width="738">
-</p>
-
-With **[GitHub action]** Size Limit will post bundle size changes as a comment
-in pull request discussion.
-
+This project has to main objectives:
+* Detect the prescence of given bird species in audio data gatheres by one microphone in the field. In this case, we will focus on Chingolos ([Zonotrichia capensis ](https://es.wikipedia.org/wiki/Zonotrichia_capensis)). **First version available**
+* Detect the prescence and localization of given bird species in audio data gatheres by an array of microphones in the field. **Under Development**
 
 ## How It Works
 
-1. Size Limit contains a CLI tool, 3 plugins (`file`, `webpack`, `time`)
-   and 3 plugin presets for popular use cases (`app`, `big-lib`, `small-lib`).
-   A CLI tool finds plugins in `package.json` and loads the config.
-2. If you use the `webpack` plugin, Size Limit will bundle your JS files into
-   a single file. It is important to track dependencies and webpack polyfills.
-   It is also useful for small libraries with many small files and without
-   a bundler.
-3. The `webpack` plugin creates an empty webpack project, adds your library
-   and looks for the bundle size difference.
-4. The `time` plugin compares the current machine performance with that of
-   a low-priced Android devices to calculate the CPU throttling rate.
-5. Then the `time` plugin runs headless Chrome (or desktop Chrome if it’s
-   available) to track the time a browser takes to compile and execute your JS.
-   Note that these measurements depend on available resources and might
-   be unstable. [See here](https://github.com/mbalabash/estimo/issues/5)
-   for more details.
+### Bird Detection
+1. It generates a challenging dataset of '.wav' files combining the vocalizations of the target bird spiecies with real recordings from birds in natural ambients and wind.
+2. It reads and preprocces the data using Torchaudio.
+3. It trains a deep 1D-convolutional Neural Network for the classification task.
+4. It evaluates the results and save the model for usage.
 
+### Bird Detection & Localizaiton
+1. Loads the vocalizations of the target bird spiecies, real recordings from birds in natural ambients and wind sound.
+2. The birds and ambient sounds are located in a virtual open field enviroment.
+3. It computes the sound arriving to each microphone in the array.
+4. It generates a dataset of '.wav' files with a number of channels equal to the number of microphones.
+6. It reads and preprocces the data using Torchaudio.
+7. It trains a deep 1D-convolutional Neural Network for the classification task (Detection) and the regression task (localization).
+8. It evaluates the results and save the model for usage.
 
 ## Usage
 
-### JS Applications
+### Bird vocalizations
+You have to locate your .wav files corresponding the brid vocalizations on "/train" and "/test" folders. You can find vocalization of a given bird spieces in Xeno-Canto [https://www.xeno-canto.org/](https://www.xeno-canto.org/).
 
-Suitable for applications that have their own bundler and send the JS bundle
-directly to a client (without publishing it to npm). Think of a user-facing app
-or website, like an email client, a CRM, a landing page or a blog with
-interactive elements, using React/Vue/Svelte lib or vanilla JS.
+### Kaggle credentials
+We use a Kaggle dataset of sounds to get ambient sound and wind sound. Notice you will have to locate your "kaggle.json" API token on your root folder (to create and download your kaggle API token follow this instructions [https://www.kaggle.com/docs/api](https://www.kaggle.com/docs/api)).
