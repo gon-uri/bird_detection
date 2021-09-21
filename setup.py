@@ -7,7 +7,7 @@ setuptools.setup(
     name="bird_detection",
     version="0.0.1",
     author="Gonzalo Uribarri",
-    description="Algorithm for bird detection through vocalizations",
+    description="Machine learning algorithm to identify the presence and location of birds.",
     long_description_content_type="text/markdown",
     url="https://github.com/gon-uri/bird_detection",
     packages=setuptools.find_packages(),
