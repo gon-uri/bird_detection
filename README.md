@@ -8,8 +8,8 @@ Machine learning algorithm to identify the presence and location of birds.
 Created by Gonzalo Uribarri at [Dynamcial Systems Lab](http://www.lsd.df.uba.ar/research/)
 
 This project has to main objectives:
-* Detect the prescence of given bird species in audio data gatheres by one microphone in the field. In this case, we will focus on Chingolos ([Zonotrichia capensis ](https://es.wikipedia.org/wiki/Zonotrichia_capensis)). **First version available**
-* Detect the prescence and localization of given bird species in audio data gatheres by an array of microphones in the field. **Under Development**
+* Detect the presence of given bird species in audio data gathered by one microphone in the field. In this case, we will focus on "Chingolos" ([Zonotrichia capensis](https://es.wikipedia.org/wiki/Zonotrichia_capensis)). **First version available**
+* Detect the presence and location of individuals of an specific bird species in audio data collected by an array of microphones in the field. **Under Development**
 
 ## How It Works
 
@@ -23,7 +23,7 @@ This project has to main objectives:
 1. Loads the vocalizations of the target bird spiecies, real recordings from birds in natural ambients and wind sound.
 2. The birds and ambient sounds are located in a virtual open field enviroment.
 3. It computes the sound arriving to each microphone in the array.
-4. It generates a dataset of '.wav' files with a number of channels equal to the number of microphones.
+4. It generates a dataset of '.wav' files with a number of channels equal to the number of microphones in the array.
 6. It reads and preprocces the data using Torchaudio.
 7. It trains a deep 1D-convolutional Neural Network for the classification task (Detection) and the regression task (localization).
 8. It evaluates the results and save the model for usage.
