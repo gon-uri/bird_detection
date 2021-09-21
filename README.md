@@ -1,5 +1,5 @@
 <img src="https://github.com/gon-uri/bird_detection/blob/main/img/LogoLSD.png" align="right"
-     alt="LSD logo" width="450" height="150">
+     alt="LSD logo" width="450" height="130">
      
 # Bird Detection Algorithm
 
