@@ -5,7 +5,7 @@
 
 Machine learning algorithm to identify the presence and location of birds.
 
-Created by Gonzalo Uribarri at [Dynamcial Systems Lab](http://www.lsd.df.uba.ar/research/)
+Created by Gonzalo Uribarri at [Dynamcial Systems Lab](http://www.lsd.df.uba.ar/)
 
 This project has to main objectives:
 * Detect the presence of given bird species in audio data gathered by one microphone in the field. In this case, we will focus on "Chingolos" ([Zonotrichia capensis](https://es.wikipedia.org/wiki/Zonotrichia_capensis)). **First version available**
