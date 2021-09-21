@@ -3,7 +3,8 @@
      
 # Bird Detection Algorithm
 
-Machine learning algorithm to identify the presence and location of birds. 
+Machine learning algorithm to identify the presence and location of birds.
+
 Created by Gonzalo Uribarri at [Dynamcial Systems Lab](http://www.lsd.df.uba.ar/research/)
 
 * **ES modules** and **tree-shaking** support.
