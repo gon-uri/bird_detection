@@ -21,7 +21,7 @@ This project has to main objectives:
 
 ### Bird Detection & Localizaiton
 1. Loads the vocalizations of the target bird spiecies, real recordings from birds in natural ambients and wind sound.
-2. The birds and ambient sounds are located in a virtual open field enviroment.
+2. The birds and ambient sounds are located in a simple virtual open field enviroment.
 3. It computes the sound arriving to each microphone in the array.
 4. It generates a dataset of '.wav' files with a number of channels equal to the number of microphones in the array.
 6. It reads and preprocces the data using Torchaudio.
