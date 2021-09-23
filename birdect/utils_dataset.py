@@ -2,14 +2,8 @@ import numpy as np
 import torchaudio
 import torch
 
-# Gfucnionporong
-def funcion_loca(numerito):
-    #print(numerito)
-    return 0
-
-
 # Get a random wind song
-def get_wind(df_wind):
+def get_wind(df_wind, folder_audios, SAMPLING_RATE):
     id = np.random.randint(0,df_wind.shape[0]-1)
     filename = df_wind.iloc[id]
     waveform, sample_rate = torchaudio.load(folder_audios + filename)
@@ -19,7 +13,7 @@ def get_wind(df_wind):
     return wind_waveform
 
 # Get random background sound
-def get_background(df_background):
+def get_background(df_background, folder_audios, SAMPLING_RATE):
     id = np.random.randint(0,df_background.shape[0]-1)
     filename = df_background.iloc[id]
     waveform, sample_rate = torchaudio.load(folder_audios + filename)
@@ -29,7 +23,7 @@ def get_background(df_background):
     return background_waveform
 
 # Get a random bird song
-def get_bird_waveform(chingolos_filenames):
+def get_bird_waveform(chingolos_filenames, SAMPLING_RATE):
     id = np.random.randint(0,len(chingolos_filenames)-1)
     filename = chingolos_filenames[id]
     waveform, sample_rate = torchaudio.load(filename)
