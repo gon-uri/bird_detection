@@ -49,3 +49,6 @@ def get_background_location(ranges):
     z_abs = np.random.uniform(ranges[2]/4,ranges[2])
     z = z_abs * np.random.choice([-1,1],p=[0.5, 0.5])
     return np.asarray([x,y,z])
+
+def prueba(numerito):
+    print(numerito)
