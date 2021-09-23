@@ -50,6 +50,6 @@ def get_background_location(ranges):
     z = z_abs * np.random.choice([-1,1],p=[0.5, 0.5])
     return np.asarray([x,y,z])
 
-def prueba(numerito):
-  print(numerito)
-  return 0
+def funcion_loca(numerito):
+    print(numerito)
+    return 0
