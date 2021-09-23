@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="bird_detection",
+    name="birdect",
     version="0.0.1",
     author="Gonzalo Uribarri",
     description="Machine learning algorithm to identify the presence and location of birds.",
