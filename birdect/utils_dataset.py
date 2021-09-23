@@ -1,3 +1,7 @@
+import numpy as np
+import torchaudio
+import torch
+
 # Get a random wind song
 def get_wind(df_wind):
     id = np.random.randint(0,df_wind.shape[0]-1)
