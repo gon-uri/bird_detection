@@ -51,5 +51,5 @@ def get_background_location(ranges):
     return np.asarray([x,y,z])
 
 def prueba(numerito):
-    print(numerito)
-    return 0
+  print(numerito)
+  return 0
