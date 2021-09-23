@@ -2,6 +2,12 @@ import numpy as np
 import torchaudio
 import torch
 
+
+def funcion_loca(numerito):
+    print(numerito)
+    return 0
+
+
 # Get a random wind song
 def get_wind(df_wind):
     id = np.random.randint(0,df_wind.shape[0]-1)
@@ -49,7 +55,3 @@ def get_background_location(ranges):
     z_abs = np.random.uniform(ranges[2]/4,ranges[2])
     z = z_abs * np.random.choice([-1,1],p=[0.5, 0.5])
     return np.asarray([x,y,z])
-
-def funcion_loca(numerito):
-    print(numerito)
-    return 0
