@@ -52,3 +52,4 @@ def get_background_location(ranges):
 
 def prueba(numerito):
     print(numerito)
+    return 0
