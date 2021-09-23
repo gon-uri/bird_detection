@@ -2,9 +2,9 @@ import numpy as np
 import torchaudio
 import torch
 
-
+# Gfucnionporong
 def funcion_loca(numerito):
-    print(numerito)
+    #print(numerito)
     return 0
 
 
