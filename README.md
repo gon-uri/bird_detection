@@ -9,7 +9,7 @@ Created by Gonzalo Uribarri at [Dynamical Systems Lab](http://www.lsd.df.uba.ar/
 
 This project has two main objectives:
 * Detect the presence of given bird species in audio data gathered by one microphone in the field. In this case, we will focus on "Chingolos" ([Zonotrichia capensis](https://es.wikipedia.org/wiki/Zonotrichia_capensis)). **First version available**
-* Detect the presence and location of individuals of an specific bird species in audio data collected by an array of microphones in the field. **Under Development**
+* Detect the presence and location of individuals of a specific bird species in audio data collected by an array of microphones in the field. **Under Development**
 
 ## How It Works
 
